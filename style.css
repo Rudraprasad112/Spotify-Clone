@@ -1,0 +1,488 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+  background-color: black;
+   color: white;
+   overflow: hidden;
+}
+.main{
+    display:flex;
+    height: 100vh;
+    
+}
+
+.sidebar{
+    margin-left: 6px;
+    width: 350px;
+   background-color:black;
+    
+}   
+.middle{
+    background-color:#121212;
+    flex:1;
+    border-radius: 1.2rem;
+    margin-left: 0.5rem;
+    overflow: auto;
+
+}
+.player{
+    position: fixed;
+    bottom:0px;
+    width: 100%;
+   height: 78px;
+    background-color: black
+}
+.nav {
+   background-color: #121212;
+   border-radius: 0.60rem;
+   height: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 0.25rem 0.75rem;
+}
+.nav .options{
+    line-height: 50px;
+    padding-left: 1.25rem;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav .options i {
+  
+}
+.nav .options a{
+    font-size: 1rem;
+    margin-left: 1rem;
+    font-weight: 600;
+}
+.options .home{
+    opacity: 1;
+}
+.options .search{
+    opacity: 0.75;
+}
+.options .search:hover{
+opacity: 1;
+}
+.main .nav{
+    margin-top: 7px;
+}
+.library{
+    height: 100%;
+    background-color: #121212;
+   border-radius: 0.60rem;
+   margin-top: 0.5rem;
+}
+
+.library .laboptions{
+    position: sticky;
+}
+
+.laboptions img{
+    height: 1.25rem;
+    width: 1.25rem;
+    padding-right: 10px;
+    
+}
+.laboptions .option1 a{
+    font-size:16px;
+    font-weight: 600;
+}
+.laboptions .option1{
+    opacity: 0.75;
+}
+.laboptions .option1:hover{
+    opacity: 1;
+}
+.laboptions .option2 i{
+   opacity: 0.50;
+    width: 1.25rem;
+}
+.laboptions .option2 i:hover{
+    opacity: 1;
+    
+ }
+.laboptions {
+    display: flex;
+   justify-content: space-between;
+ margin: 0.5rem 0 0 0.5rem;
+}
+.library{
+    padding: 0.50rem 1rem;
+    
+}
+.library .buttons button{
+    margin: 1.75rem 0 1.75rem 0;
+   height: 2rem;
+   width: 5rem;
+   border-radius: 90px;
+   background-color: #c7bbbb1d;
+    justify-content: space-between;
+    color: white;
+    border: none;
+    font-weight: 600;
+    margin-left: 0.60rem;
+    opacity: 0.80;
+}
+.library .buttons :hover{
+    opacity: 0.90;
+    
+}
+
+.library .nonsticky .nsupper{
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.70;
+}
+ .nsupper  i{
+    
+    opacity: 0.80;
+}
+ .nsupper i:hover{
+   
+    opacity: 1;
+}
+.nsupper  a{
+   
+    opacity: 0.80;
+}
+.nsupper  i,a :hover{
+   
+    opacity: 1;
+}
+.stick{
+    position: sticky;
+    margin-left: 1rem;
+}
+.middle{
+    
+    margin-top: 5px;
+    border-radius: 0.60rem;
+    overflow: auto;
+}
+.middle .sticky_nav{
+   position: sticky;
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    z-index: 10;
+    
+}
+.sticky_nav button{
+    width: 8rem;
+    height: 2rem;
+    border-radius: 1rem;
+}
+
+
+.sticky_nav .ificons{
+    display: flex;
+    margin: 1rem 1rem;
+}
+.sticky_nav .ificons div{
+    height: 32px;
+    width: 32px;
+   background-color: #232323;
+   border-radius: 50%;
+   
+}
+.sticky_nav .ificons span{
+    margin: 7px;
+}
+.ificons .icon1 span{
+    
+    margin-left: 10px;
+    margin-top: 3px;
+   
+}
+.ificons .icon1{
+    opacity: 0.70;
+   
+}
+.ificons .icon1:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.ificons .icon2 span{
+    margin-left: 10px;
+    margin-top: 3px;
+    margin-left: 4px;
+    
+}
+.ificons .icon2 {
+    margin-left: 10px;
+    opacity: 0.70;
+}
+.ificons .icon2:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.nav_buttons {
+    display: flex;
+    
+}
+.myclass{
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+
+
+.nav_buttons .btn1{
+    background-color: white;
+    color: black;
+    border: none;
+    font-weight: 600;
+    opacity: 0.80;
+}
+.nav_buttons .btn1:hover{
+   font-size: 14px;
+   
+}
+.nav_buttons .btn2{
+    background-color: #030303;
+    color: white;
+    border: none;
+    font-weight: 700;
+    opacity: 0.70;
+}
+.nav_buttons .btn2 :hover{
+    font-size: 15px;
+}
+.nav_buttons .btn2 i{
+   padding-right: 7px;
+}
+.nav_buttons .bel{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color:#232323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_buttons .bel:hover{
+   background-color: #23232325;
+}
+.nav_buttons .porfile{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-color: rgb(232, 221, 232);
+    display: flex;
+    color: black;
+    font-family: none;
+    justify-content: center;
+    align-items: center;
+    border: 2px
+    
+    
+}
+.nav_buttons .porfile:hover{
+    opacity: 0.60;
+    cursor: pointer;
+}
+.nav_buttons .outer{
+    background-color: #000000;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navii_buttonsii {
+    position: sticky;
+    display: flex;
+    
+   
+}
+.navii_buttonsii button{
+    margin-left: 0.90rem;
+    margin-top: -2rem;
+    z-index: 10;
+}
+.set{
+    height: 2rem;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 0.90rem;
+    border: none;
+    background-color: #232323;
+    color: white;
+}
+.white{
+    font-size: 16px;
+    background-color: white;
+    height: 2rem;
+    width: 2.5rem;
+    border-radius: 1rem;
+    border:none;
+}
+@media (max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+.cards{
+    padding: 1rem 1rem;
+    z-index: 0;
+   
+}
+.cards .minicards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards .minicards .songs{
+    width: 12.26rem;
+    height: 3rem;
+    border-radius: 0.60rem;
+   background-color: #232323;
+   margin: 0.25rem 0.25rem;
+}
+.songs{
+    display: flex;
+}
+.imag{
+    height:3rem ;
+    width:4rem;
+    background-size: cover;
+}
+.imag img{
+   height: 3rem;
+   
+}
+.arrange{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bigcards .head{
+    display: flex;
+    justify-content: space-between;
+}
+.head p{
+    padding-top: 15px;
+    font-weight: 600;
+}
+.bigcards .cards{
+    margin:0.80rem;
+    width: 12.5rem;
+    height: 17em;
+    background-color: #2323234a;
+    border-radius: 0.60rem;
+}
+
+.bigcards .cards img{
+    height: 11rem;
+    width: 12.5rem;
+    padding-top: 0.5rem;
+    border-radius: 0.60rem;
+    
+}
+.bigcards .title{
+    font-weight: 800;
+}
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 90%;
+    height: 70%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+.player{
+    display: flex;
+   align-items: center;
+  
+    
+}
+.player .list, .control2{
+   width:24.5rem ;
+   height: 3.5rem;
+ 
+  margin-left: 0.5rem;
+}
+.player .list{
+    display: flex;
+   align-items: center;
+    
+}
+.control1{
+    
+    justify-content: center;
+    align-items: center;
+    width: 40.5rem;
+    height:3.5rem ;
+   
+    margin-left: 0.5rem;
+}
+.list img{
+    height: 3.5rem;
+    width: 4rem;
+    margin-right: 0.5rem;
+
+}
+.list .img{
+    display: flex;
+    margin-top: 0.5rem;
+}
+.list p{
+    opacity: 1;
+    font-size: 15px;
+}
+.list .hart i{
+    margin-right: 1rem;
+    padding-left: 1rem;
+    opacity: 0.75;
+}
+.hart i:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.list .light:hover{
+    text-decoration: underline white;
+    cursor: pointer;
+
+}
+.list .control1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.control1 .control1_icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.control1 span,i{
+   padding-right: 1.75rem;
+   padding-left: 1.25rem;
+}
+.control1 .range{
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
